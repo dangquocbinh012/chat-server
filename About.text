@@ -1,3 +1,43 @@
 git add .
 git commit -m "Your commit message"
 git push
+git push origin HEAD:master
+
+npm init
+Press ^C at any time to quit.
+package name: (chat-server)
+version: (1.0.0)                                                                            
+description:                                                                                
+entry point: (index.js) server.js                                                           
+test command:                                                                               
+git repository:                                                                             
+keywords:                                                                                   
+author: DQB                                                                                 
+license: (ISC)                                                                              
+type: (commonjs)                                                                            
+About to write to C:\FirstMobileApp\Full-stack\chat-server\package.json:
+
+{
+  "name": "chat-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "DQB",
+  "license": "ISC",
+  "type": "commonjs"
+
+}
+node server.js
+
+npm install express
+npm install morgan
+
+npm install express-rate-limit helmet express-mongo-sanitize body-parser xss
+npm install nodemon -g 
+
+add "start": "nodemon server.js" to package.json
+
+npm run start
